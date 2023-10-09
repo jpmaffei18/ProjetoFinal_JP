@@ -1,26 +1,35 @@
+<ion-header style="height: 170px; background-color: #FBFFF1;">
+  <img src="https://i.imgur.com/t6QBDUo.png"
+    style="margin-top: -50px; width: 330px; position: relative; z-index: 2;">
+    
 
-<ion-header>
   
-  <div id="wave" style="position: relative; z-index: 1;">
-    <img src="https://i.imgur.com/VKV3Udn.png" style=" margin-top: -50px; width: 330px;position: relative; z-index: 2;">
-  </div>
 </ion-header>
 
 
-<ion-content mode="ios" [fullscreen]="true" color="success" >
-  <form style="margin-top: 30px; width:95%;">
-    <ion-list >
-      <ion-item  color="success">
-        
-        <ion-label position="floating">Email</ion-label>
-        <ion-input  fill="solid" placeholder="chama@gmail.com" type="email"
-          name="email"  required></ion-input>
-          <ion-icon name="mail-outline" slot="start"></ion-icon>
+<ion-content mode="ios" [fullscreen]="true" color="success">
+  <div class="container">
+    <svg viewBox="0 0 500 500"  preserveAspectRatio="xMinYMin meet" >
+      <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill: #FBFFF1;"></path>
+    </svg>
+  </div>
+
+  <form style="margin-top: -200px; width:95%;">
+    <ion-list>
+      <ion-item color="success">
+
+
+        <ion-input fill="solid" placeholder="chama@gmail.com" type="email" name="email" required></ion-input>
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+
       </ion-item>
 
+    </ion-list>
+
+    <ion-list>
       <ion-item color="success">
-        <ion-input class="input" label-placement="floating" label="Senha" fill="solid" placeholder="senha" type="password"
-          name="password"  required></ion-input>
+        <ion-input fill="solid" placeholder="senha" type="password" name="password" required></ion-input>
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
       </ion-item>
     </ion-list>
 
@@ -30,10 +39,10 @@
   </form>
   <ion-row class="ion-align-items-center">
     <ion-col size="12" class="ion-text-center">
-<ion-button  style="width: 70%; border-radius: 5px;" color="light" routerLink="/home"> Login </ion-button>
+      <ion-button style="width: 70%; border-radius: 5px;" color="light" routerLink="/home"> Login </ion-button>
 
-<ion-button fill="outline" class="botao" color="light"> Cadastre-se</ion-button>
+      <ion-button fill="outline" class="botao" color="light"> Cadastre-se</ion-button>
 
-</ion-col>
-</ion-row>
+    </ion-col>
+  </ion-row>
 </ion-content>
